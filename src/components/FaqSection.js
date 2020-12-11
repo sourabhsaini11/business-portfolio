@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Styled from 'styled-components';
 import {About} from '../styles';
 
 const FaqSection = () => {
