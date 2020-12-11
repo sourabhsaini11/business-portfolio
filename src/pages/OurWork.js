@@ -11,27 +11,25 @@ const OurWork = () => {
         <Work>
             <Movie>
                 <h2>The Athlete</h2>
-                <div className="line">
+                <div className="line"></div>
                     <Link>
                         <img src={athlete} alt="athlete" />
                     </Link>
-                </div>
             </Movie>
             <Movie>
                 <h2>The Racer</h2>
-                <div className="line">
+                <div className="line"></div>
                     <Link>
                         <img src={theracer} alt="theracer" />
                     </Link>
-                </div>
             </Movie>
             <Movie>
                 <h2>Good Times</h2>
-                <div className="line">
+                <div className="line"></div>
                     <Link>
                         <img src={goodtimes} alt="goodtimes" />
                     </Link>
-                </div>
+                
             </Movie>
         </Work>
     );
@@ -47,17 +45,17 @@ const Work =styled.div`
 `;
 
 const Movie = styled.div`
-    padding-bottom:10rem;
-    .line{
-        height:0.5rem;
-        background:#cccccc;
-        margin-bottom:3rem;
-    }
-    img{
-        width:100%;
-        height:70vh;
-        object-fit:cover;
-    }
+    padding-bottom: 10rem;
+   .line {
+    height: 0.5rem;
+    background: #cccccc;
+    margin-bottom: 3rem;
+  }
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  } 
 `;
 
 export default OurWork;
