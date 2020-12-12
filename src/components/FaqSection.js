@@ -1,43 +1,39 @@
 import React from 'react';
 import styled from 'styled-components';
 import {About} from '../styles';
+import Toggle  from "./Toggle";
+import { AnimateSharedLayout } from 'framer-motion';
 
 const FaqSection = () => {
     return (
             <Faq>
                 <h2>AnyQuestions ? <span>FAQ</span></h2>
-                <div className="question">
-                    <h4>How do I Start?</h4>
+                <AnimateSharedLayout>
+                <Toggle title="How do I Start?">
                     <div className="answer">
                         <p>asd sdsad fdgf hjgj</p>
                         <p>asdsa qwew ret vcb zcx gh ojj hbhbu huv klmklftctrtr n mjn fvf</p>
                     </div>
-                    <div className="faq-line"></div>
-                </div>
-                <div className="question">
-                    <h4>Daily Schedule</h4>
+                </Toggle>
+                <Toggle title="Daily Schedule">
                     <div className="answer">
                         <p>asd sdsad fdgf hjgj</p>
                         <p>asdsa qwew ret vcb zcx gh ojj hbhbu huv klmklftctrtr n mjn fvf</p>
                     </div>
-                    <div className="faq-line"></div>
-                </div>
-                <div className="question">
-                    <h4>Payment Methods</h4>
+                </Toggle>
+                <Toggle title="Payment Methods">
                     <div className="answer">
                         <p>asd sdsad fdgf hjgj</p>
                         <p>asdsa qwew ret vcb zcx gh ojj hbhbu huv klmklftctrtr n mjn fvf</p>
                     </div>
-                    <div className="faq-line"></div>
-                </div>
-                <div className="question">
-                    <h4>What products do you offer?</h4>
+                </Toggle>
+                <Toggle title="What products do you offer?">
                     <div className="answer">
                         <p>asd sdsad fdgf hjgj</p>
                         <p>asdsa qwew ret vcb zcx gh ojj hbhbu huv klmklftctrtr n mjn fvf</p>
                     </div>
-                    <div className="faq-line"></div>
-                </div>
+                </Toggle>
+                </AnimateSharedLayout>
             </Faq>
     )
 }
