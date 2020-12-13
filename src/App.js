@@ -7,7 +7,6 @@ import OurWork from './pages/OurWork';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import MovieDetail from './pages/MovieDetails';
 import { AnimatePresence } from "framer-motion";
-import ScrollTop from "./components/ScrollTop";
 
 function App() {
 
@@ -32,7 +31,6 @@ function App() {
         <ContactUs />
       </Route>
       </Switch>
-      <ScrollTop />
       </AnimatePresence>
     </div>
   );

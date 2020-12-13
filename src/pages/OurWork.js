@@ -7,6 +7,7 @@ import goodtimes from '../img/goodtimes-small.png';
 import { motion} from "framer-motion";
 import { slider, sliderContainer, pageAnimation, fade, photoAnim, lineAnim } from "../animation";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
 
 const OurWork = () => {
@@ -46,6 +47,7 @@ const OurWork = () => {
                     </Link>
                 
             </Movie>
+        <ScrollTop />
         </Work>
     );
 };
