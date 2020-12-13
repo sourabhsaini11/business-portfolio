@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import {About} from '../styles';
 import Toggle  from "./Toggle";
 import { AnimateSharedLayout } from 'framer-motion';
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
 
 const FaqSection = () => {
+    const [element, controls ]= useScroll();
     return (
-            <Faq>
+            <Faq variants={scrollReveal} animate={controls} initial="hidden" ref={element}>
                 <h2>AnyQuestions ? <span>FAQ</span></h2>
                 <AnimateSharedLayout>
                 <Toggle title="How do I Start?">
